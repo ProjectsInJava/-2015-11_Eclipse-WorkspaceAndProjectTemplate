@@ -1,14 +1,14 @@
 package Bt.Tests.Core.Geometry.Elementaries;
-import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 import Bt.Core.Geometry.Elementaries.Point;
 import junit.framework.TestCase;
 
-public class TestPoint  extends TestCase
-{    
+public class TestPoint extends TestCase{
+
     @Test
-    public void EqualsPointsTheSameTrue()
+    public void testEqualsPointsTheSameTrue()
     {
         //arrange
         Point _pointA = new Point(2,2);
@@ -22,9 +22,9 @@ public class TestPoint  extends TestCase
         boolean result = !(expected ^ reached);
         assertTrue(result);
     }
-    
+
     @Test
-    public void EqualsPointsOtherFalse()
+    public void testEqualsPointsOtherFalse()
     {
         //arrange
     	Point _pointA = new Point(2,2);
@@ -40,7 +40,7 @@ public class TestPoint  extends TestCase
     }
 
     @Test
-    public void DistancePointsTheSameTrue()
+    public void testDistancePointsTheSameTrue()
     {
         //arrange
         Point _pointA  = new Point(2,5);        
@@ -54,9 +54,9 @@ public class TestPoint  extends TestCase
         boolean result = reached == expected;
         assertTrue(result);
     }
-    
+
     @Test
-    public void DistancePointsOthersTrue()
+    public void testDistancePointsOthersTrue()
     {
         //arrange
         Point _pointA = new Point(2,5);        
@@ -70,9 +70,9 @@ public class TestPoint  extends TestCase
         boolean result = expected == reached;    
         assertTrue(result);
     }
-    
+
     @Test
-    public void DistancePointsOthersFalse()
+    public void testDistancePointsOthersFalse()
     {
         //arrange
         Point _pointA = new Point(2,5);        
@@ -88,7 +88,7 @@ public class TestPoint  extends TestCase
     }
 
     @Test
-    public void ShiftPointsTrue()
+    public void testShiftPointsTrue()
     {
         //arrange
         Point _pointA = new Point(2,2);        
@@ -103,9 +103,9 @@ public class TestPoint  extends TestCase
         boolean result = ! (expected ^ reached);
         assertTrue(result);
     }
-    
+
     @Test
-    public void ShiftPointsFalse()
+    public void testShiftPointsFalse()
     {
         //arrange
         Point _pointA = new Point(2,2);        
@@ -120,4 +120,5 @@ public class TestPoint  extends TestCase
         boolean result = !(expected ^ reached);
         assertTrue(result);
     } 
+
 }
