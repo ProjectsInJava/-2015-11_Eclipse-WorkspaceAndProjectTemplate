@@ -9,7 +9,7 @@ import Bt.Core.Geometry.Elementaries.Point;
 import junit.framework.TestCase;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class TestLineSegment extends TestCase
+public class testLineSegment extends TestCase
 {
 																																			@Test
 	    public void testEqualsLineSegmentTheSameTrue1()
